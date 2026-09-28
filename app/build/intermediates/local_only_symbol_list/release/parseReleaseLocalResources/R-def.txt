@@ -1,0 +1,16 @@
+R_DEF: Internal format may change without notice
+local
+color ios_background
+color ios_blue
+color ios_card
+color ios_gray
+color ios_green
+color ios_red
+color ios_separator
+mipmap ic_launcher
+mipmap ic_launcher_round
+string accessibility_desc
+string app_name
+string notif_channel
+string notif_title
+xml accessibility_config

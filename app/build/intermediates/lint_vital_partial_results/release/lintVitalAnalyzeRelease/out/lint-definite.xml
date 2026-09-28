@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.4.1" type="incidents">
+
+    <incident
+        id="Instantiatable"
+        severity="fatal"
+        message="This class should provide a default constructor (a public constructor with no arguments) (`com.trigger.overlay.injection.ShizukuTouchService`)">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*manifest*0}"
+            line="72"
+            column="27"
+            startOffset="3167"
+            endLine="72"
+            endColumn="57"
+            endOffset="3197"/>
+    </incident>
+
+    <incident
+        id="Instantiatable"
+        severity="fatal"
+        message="`ShizukuTouchService` must extend android.app.Service">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*manifest*0}"
+            line="72"
+            column="27"
+            startOffset="3167"
+            endLine="72"
+            endColumn="57"
+            endOffset="3197"/>
+    </incident>
+
+</incidents>

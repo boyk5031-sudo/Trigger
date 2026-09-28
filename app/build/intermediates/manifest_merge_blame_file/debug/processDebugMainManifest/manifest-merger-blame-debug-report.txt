@@ -1,0 +1,234 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.trigger.overlay"
+4    android:versionCode="1"
+5    android:versionName="1.0-iOS" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Core overlay & foreground -->
+12    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+12-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:6:5-78
+12-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:6:22-75
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:7:5-77
+13-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:7:22-74
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+14-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:8:5-89
+14-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:8:22-86
+15    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+15-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:9:5-77
+15-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:9:22-74
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:10:5-66
+16-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:10:22-63
+17    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+17-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:11:5-12:53
+17-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:11:22-74
+18
+19    <!-- Shizuku / shell injection needs no extra permission, but we declare -->
+20    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+20-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:15:5-16:47
+20-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:15:22-77
+21
+22    <permission
+22-->[androidx.core:core:1.13.1] C:\Users\ASUS\.gradle\caches\transforms-4\c2610dc98bf6ef4fae89e2d5ce69bbcb\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+23        android:name="com.trigger.overlay.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+23-->[androidx.core:core:1.13.1] C:\Users\ASUS\.gradle\caches\transforms-4\c2610dc98bf6ef4fae89e2d5ce69bbcb\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+24        android:protectionLevel="signature" />
+24-->[androidx.core:core:1.13.1] C:\Users\ASUS\.gradle\caches\transforms-4\c2610dc98bf6ef4fae89e2d5ce69bbcb\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+25
+26    <uses-permission android:name="com.trigger.overlay.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+26-->[androidx.core:core:1.13.1] C:\Users\ASUS\.gradle\caches\transforms-4\c2610dc98bf6ef4fae89e2d5ce69bbcb\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+26-->[androidx.core:core:1.13.1] C:\Users\ASUS\.gradle\caches\transforms-4\c2610dc98bf6ef4fae89e2d5ce69bbcb\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+27    <uses-permission android:name="moe.shizuku.manager.permission.API_V23" />
+27-->[dev.rikka.shizuku:provider:13.1.0] C:\Users\ASUS\.gradle\caches\transforms-4\4de8ded023c8555bcde5f965f015e5a2\transformed\provider-13.1.0\AndroidManifest.xml:10:5-78
+27-->[dev.rikka.shizuku:provider:13.1.0] C:\Users\ASUS\.gradle\caches\transforms-4\4de8ded023c8555bcde5f965f015e5a2\transformed\provider-13.1.0\AndroidManifest.xml:10:22-75
+28
+29    <application
+29-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:18:5-76:19
+30        android:name="com.trigger.overlay.TriggerApp"
+30-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:19:9-35
+31        android:allowBackup="true"
+31-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:20:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.13.1] C:\Users\ASUS\.gradle\caches\transforms-4\c2610dc98bf6ef4fae89e2d5ce69bbcb\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+35        android:icon="@mipmap/ic_launcher"
+35-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:21:9-43
+36        android:label="Trigger"
+36-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:23:9-32
+37        android:roundIcon="@mipmap/ic_launcher_round"
+37-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:22:9-54
+38        android:supportsRtl="true"
+38-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:24:9-35
+39        android:testOnly="true"
+40        android:theme="@android:style/Theme.NoTitleBar" >
+40-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:25:9-56
+41
+42        <!-- Shizuku Provider - runs in shell process when invoked -->
+43        <provider
+44            android:name="rikka.shizuku.ShizukuProvider"
+44-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:29:13-57
+45            android:authorities="com.trigger.overlay.shizuku"
+45-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:30:13-59
+46            android:enabled="true"
+46-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:31:13-35
+47            android:exported="true"
+47-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:32:13-36
+48            android:multiprocess="false"
+48-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:33:13-41
+49            android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
+49-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:34:13-79
+50
+51        <activity
+51-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:36:9-45:20
+52            android:name="com.trigger.overlay.MainActivity"
+52-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:37:13-41
+53            android:exported="true"
+53-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:38:13-36
+54            android:theme="@android:style/Theme.NoTitleBar"
+54-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:40:13-60
+55            android:windowSoftInputMode="adjustResize" >
+55-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:39:13-55
+56            <intent-filter>
+56-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:41:13-44:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:42:17-69
+57-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:42:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:43:17-77
+59-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:43:27-74
+60            </intent-filter>
+61        </activity>
+62
+63        <!-- Foreground service managing floating overlay -->
+64        <service
+64-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:48:9-55:19
+65            android:name="com.trigger.overlay.service.FloatingTriggerService"
+65-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:49:13-59
+66            android:exported="false"
+66-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:50:13-37
+67            android:foregroundServiceType="specialUse" >
+67-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:51:13-55
+68            <property
+68-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:52:13-54:56
+69                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+69-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:53:17-76
+70                android:value="game overlay trigger" />
+70-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:54:17-53
+71        </service>
+72
+73        <!-- Fallback accessibility injector -->
+74        <service
+74-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:58:9-68:19
+75            android:name="com.trigger.overlay.service.TriggerAccessibilityService"
+75-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:59:13-64
+76            android:exported="true"
+76-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:60:13-36
+77            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+77-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:61:13-79
+78            <intent-filter>
+78-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:62:13-64:29
+79                <action android:name="android.accessibilityservice.AccessibilityService" />
+79-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:63:17-92
+79-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:63:25-89
+80            </intent-filter>
+81
+82            <meta-data
+82-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:65:13-67:64
+83                android:name="android.accessibilityservice"
+83-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:66:17-60
+84                android:resource="@xml/accessibility_config" />
+84-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:67:17-61
+85        </service>
+86
+87        <!-- Shizuku user service that runs as shell (uid 2000) and injects InputEvents -->
+88        <service
+88-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:71:9-74:38
+89            android:name="com.trigger.overlay.injection.ShizukuTouchService"
+89-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:72:13-58
+90            android:enabled="true"
+90-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:74:13-35
+91            android:exported="true" />
+91-->D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app\src\main\AndroidManifest.xml:73:13-36
+92
+93        <provider
+93-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS\.gradle\caches\transforms-4\a0f3e2e68ed10125cb35afba6ad91d8a\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+94            android:name="androidx.startup.InitializationProvider"
+94-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS\.gradle\caches\transforms-4\a0f3e2e68ed10125cb35afba6ad91d8a\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+95            android:authorities="com.trigger.overlay.androidx-startup"
+95-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS\.gradle\caches\transforms-4\a0f3e2e68ed10125cb35afba6ad91d8a\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+96            android:exported="false" >
+96-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS\.gradle\caches\transforms-4\a0f3e2e68ed10125cb35afba6ad91d8a\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+97            <meta-data
+97-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS\.gradle\caches\transforms-4\a0f3e2e68ed10125cb35afba6ad91d8a\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+98                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+98-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS\.gradle\caches\transforms-4\a0f3e2e68ed10125cb35afba6ad91d8a\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+99                android:value="androidx.startup" />
+99-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ASUS\.gradle\caches\transforms-4\a0f3e2e68ed10125cb35afba6ad91d8a\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+100            <meta-data
+100-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\ASUS\.gradle\caches\transforms-4\91b9ac8e9fb4fa9eece46360dc15a72a\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:29:13-31:52
+101                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+101-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\ASUS\.gradle\caches\transforms-4\91b9ac8e9fb4fa9eece46360dc15a72a\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:30:17-78
+102                android:value="androidx.startup" />
+102-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\ASUS\.gradle\caches\transforms-4\91b9ac8e9fb4fa9eece46360dc15a72a\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:31:17-49
+103            <meta-data
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+104                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+105                android:value="androidx.startup" />
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+106        </provider>
+107
+108        <meta-data
+108-->[dev.rikka.shizuku:provider:13.1.0] C:\Users\ASUS\.gradle\caches\transforms-4\4de8ded023c8555bcde5f965f015e5a2\transformed\provider-13.1.0\AndroidManifest.xml:13:9-15:36
+109            android:name="moe.shizuku.client.V3_SUPPORT"
+109-->[dev.rikka.shizuku:provider:13.1.0] C:\Users\ASUS\.gradle\caches\transforms-4\4de8ded023c8555bcde5f965f015e5a2\transformed\provider-13.1.0\AndroidManifest.xml:14:13-57
+110            android:value="true" />
+110-->[dev.rikka.shizuku:provider:13.1.0] C:\Users\ASUS\.gradle\caches\transforms-4\4de8ded023c8555bcde5f965f015e5a2\transformed\provider-13.1.0\AndroidManifest.xml:15:13-33
+111
+112        <receiver
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+113            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+114            android:directBootAware="false"
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+115            android:enabled="true"
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+116            android:exported="true"
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+117            android:permission="android.permission.DUMP" >
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+118            <intent-filter>
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+119                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+120            </intent-filter>
+121            <intent-filter>
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+122                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+123            </intent-filter>
+124            <intent-filter>
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+125                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+126            </intent-filter>
+127            <intent-filter>
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+128                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-4\f04a602abe8a6326529a0fca6cb72c56\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+129            </intent-filter>
+130        </receiver>
+131    </application>
+132
+133</manifest>

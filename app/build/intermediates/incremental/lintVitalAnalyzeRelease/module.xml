@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="D:\New\Trigger-arena-01a0e7a3-trigger\Trigger-arena-01a0e7a3-trigger\app"
+    name=":app"
+    type="APP"
+    maven="Trigger:app:unspecified"
+    agpVersion="8.4.1"
+    buildFolder="build"
+    bootClassPath="C:\Users\ASUS\AppData\Local\Android\Sdk\platforms\android-34\android.jar;C:\Users\ASUS\AppData\Local\Android\Sdk\build-tools\34.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

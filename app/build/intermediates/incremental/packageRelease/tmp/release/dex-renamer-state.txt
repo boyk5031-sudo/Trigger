@@ -1,0 +1,7 @@
+#Mon Sep 28 05:02:00 PDT 2026
+base.0=D\:\\New\\Trigger-arena-01a0e7a3-trigger\\Trigger-arena-01a0e7a3-trigger\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+base.1=D\:\\New\\Trigger-arena-01a0e7a3-trigger\\Trigger-arena-01a0e7a3-trigger\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
+path.0=classes.dex
+path.1=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
